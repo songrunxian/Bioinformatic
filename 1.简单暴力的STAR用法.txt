@@ -1,0 +1,19 @@
+STAR：Extremely fast (however it requires at least 30 Gb memory) 
+
+使用
+Step 1 - Build a genome index：
+STAR  --runMode genomeGenerate --runThreadN <# cpus> --genomeDir <genome output directory> --genomeFastaFiles <input Genome FASTA file> --sjdbGTFfile <input GTF>
+
+i.e.  STAR  --runMode genomeGenerate --runThreadN 24 --genomeDir ./ --genomeFastaFiles mm9.fa --sjdbGTFfile ../annotation.gtf
+
+Step 2 - Align RNA-Seq Reads to the genome with STAR
+STAR --genomeDir <Directory with the Genome Index>  --runThreadN <# cpus> --outSAMtype BAM SortedByCoordinate --readFilesIn <FASTQ file> --outFileNamePrefix <OutputPrefix>
+
+i.e. SR	STAR --genomeDir mm9-starIndex/  --runThreadN 24  --outSAMtype BAM SortedByCoordinate --outFilterMultimapNmax 1 --outFilterMismatchNmax 2 --outSAMattributes MD NH --readFilesIn Experiment1.fastq --outFileNamePrefix Experiment1Star
+i.e. PE	STAR --genomeDir mm9-starIndex/  --runThreadN 24  --outSAMtype BAM SortedByCoordinate --outFilterMultimapNmax 1 --outFilterMismatchNmax 2 --outSAMattributes MD NH --readFilesIn read1.fastq read2.fastq --outFileNamePrefix Experiment1Star
+
+
+*：和hisat2相比较而言，模式植物用star，非模式植物用hisat2
+*：直接生成bam
+*：MD是mismatch位置的字符串的表示形式，貌似在call SNP和indel的时候会用到
+*：
