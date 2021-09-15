@@ -16,4 +16,6 @@ i.e. PE	STAR --genomeDir mm9-starIndex/  --runThreadN 24  --outSAMtype BAM Sorte
 *：和hisat2相比较而言，模式植物用star，非模式植物用hisat2
 *：直接生成bam
 *：MD是mismatch位置的字符串的表示形式，貌似在call SNP和indel的时候会用到
-*：
+*：NH是标准格式
+
+参考说明文档：https://physiology.med.cornell.edu/faculty/skrabanek/lab/angsd/lecture_notes/STARmanual.pdf
