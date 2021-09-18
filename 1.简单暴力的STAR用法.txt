@@ -17,5 +17,6 @@ i.e. PE	STAR --genomeDir mm9-starIndex/  --runThreadN 24  --outSAMtype BAM Sorte
 *：直接生成bam
 *：MD是mismatch位置的字符串的表示形式，貌似在call SNP和indel的时候会用到
 *：NH是标准格式
+*：If your fastq files are gzip-compressed, you have to use the parameter        --readFilesCommand zcat
 
 参考说明文档：https://physiology.med.cornell.edu/faculty/skrabanek/lab/angsd/lecture_notes/STARmanual.pdf
