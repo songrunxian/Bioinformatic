@@ -1,0 +1,5 @@
+qapa的安装详见：https://github.com/morrislab/qapa
+
+简单的使用方法：
+First ：build: Generate a 3′ UTR library from annotations
+对于植物而言，请使用Ensembl Plants    （https://plants.ensembl.org/index.html）
