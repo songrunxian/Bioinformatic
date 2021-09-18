@@ -1,5 +1,36 @@
 qapa的安装详见：https://github.com/morrislab/qapa
 
 简单的使用方法：
-First ：build: Generate a 3′ UTR library from annotations
-对于植物而言，请使用Ensembl Plants    （https://plants.ensembl.org/index.html）
+
+First 通过build建库：
+
+· 对于植物而言，请使用Ensembl Plants    （https://plants.ensembl.org/index.html）的Biomart 构建 ensembl_identifiers.txt
+ensembl_identifiers.txt 包含 【Ensembl Gene ID】【Ensembl Transcript ID】【Gene Type】【Transcript Type】【Gene Name】
+·将GTF转换成genePred format
+gtfToGenePred -genePredExt custom_genes.gtf custom_genes.genePred
+·准备好该物种GTF文件对应的BED文件 - custom_sites.bed
+
+qapa build --db ensembl_identifiers.txt -o custom_sites.bed custom_genes.genePred > output_utrs.bed
+
+Second 提取 3′ UTR sequences，生成新的参考（类似参考基因组）
+
+qapa fasta -f genome.fa output_utrs.bed output_sequences.fa
+
+Third 通过salmon将测序数据比对到新生成的参考基因组上
+首先，使用salmon构建output_sequences.fa的索引，salmon index -t output_sequences.fa -i utr_library
+然后，定量：
+· salmon quant -i transcripts_index -l <LIBTYPE> -r reads.fq -o transcripts_quant 【单端】
+· salmon quant -i transcripts_index -l <LIBTYPE> -1 reads1.fq -2 reads2.fq -o transcripts_quant 【双端】
+*注意是fq格式 不是压缩格式
+*LIBTYPE：单端（SF）双端（IU）
+
+面对生成的模式目录：
+project/
+  |-- sample1/quant.sf
+  |-- sample2/quant.sf
+  |-- (etc.)
+
+qapa quant --db ensembl_identifiers.mm10.txt project/sample*/quant.sf > pau_results.txt
+
+
+
