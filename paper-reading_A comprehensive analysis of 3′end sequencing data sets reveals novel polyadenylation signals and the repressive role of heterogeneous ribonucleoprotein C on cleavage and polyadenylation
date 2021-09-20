@@ -1,0 +1,9 @@
+·RNA聚合酶Ⅱ【RNA polymerase II】，是一个多种蛋白质复合体。它是在真核生物细胞核中发现的三种RNA聚合酶之一。 它催化DNA的转录，以合成mRNA的和大多数snRNA和miRNA的前体。
+·snRNA【核内小RNA】，是含有100到300碱基的RNA。它参与真核生物细胞核中RNA的加工。snRNA和许多蛋白质结合在一起成为小胞核核糖核蛋白（snRNPs即small nuclear ribonucleoproteins），参与信使RNA前体（pre-mRNA）的剪接，使后者成为成熟mRNA。
+·miRNA，来自一些从DNA转录而来，但无法进一步翻译成蛋白质的RNA（属于非编码RNA）。miRNA通过与目标mRNA结合，进而抑制转录后的基因表达。
+
+（1）RNA聚合酶ⅱ参与的转录物得生成需要核酸内切酶得参与，而经过酶切后往往需要添加70-100个核苷酸长度的尾巴（3'UTR）。
+（2）3'UTR长度随着细胞状态的变化而发生变化。
+（3）3’UTR的长度是由【 specific spliceosomal proteins（特异性的剪切蛋白）】【 core pre-mRNA 3′end processing factors】【polyadenylation（聚腺苷酸化） factors】共同决定的
+（4）3'UTR包含许多rna结合蛋白(RBPs)的识别元件，这些元件在不同的细胞环境中调节转录本的亚细胞定位、细胞内交通、衰变和翻译（3'UTR的重要意义），所以说poly(A)位点的选择具有重要的调节作用，可达到产生蛋白的亚细胞定位
+（5）测序技术的一个核心就是想进办法捕获这个3'（或者）5'但是每种方法提取的都不一样。
