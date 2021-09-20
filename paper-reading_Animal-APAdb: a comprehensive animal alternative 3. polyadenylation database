@@ -1,0 +1,36 @@
+Animal-APAdb: a comprehensive animal alternative polyadenylation database
+
+INTRODUCTION：
+Alternative polyadenylation (APA)【选择性多聚腺苷酸化】：是一种广泛存在的机制，通过识别不同的多聚腺苷酸化信号，有助于产生具有不同长度的3′UTR
+UTR【untranslated region，非翻译区】：一条mRNA链上有多个编码区（coding region），5'端、3'端和各编码区之间为非翻译区
+
+· APA这可能导致一些重要的调控元件，如miRNA结合位点和RNA蛋白结合位点的改变，从而影响mRNA的稳定性、定位和翻译 
+· 大约70%的真核基因具有多个功能性polyadenylation sites【聚腺苷酸化位点，PAS】
+· APA介导的基因调控功能在组织特异性和细胞特异性
+· 目前已经开发了几种方法来识别PAS和量化APA。 目前，(RNA-seq)已成为一种在基因组水平检测APA的技术。相关算法可分为2：
+    - de novo identification algorithms（从头识别算法）：IsoSCM，DaPars，APAtrap，TAPAS 
+    - annotation-based algorithms（基于注释的算法）：MISO，roar，QAPA
+
+在本研究中，我们利用从公共数据库收集的RNA-seq数据系统地描述了18个物种的9244个样本的APA谱。我们的团队预测了这些物种的PAS和PAS附近的(APA基序)；开发了Animal-APAdb (http://gong_lab.hzau.edu.cn/Animal-APAdb/)，一个数据库，用于浏览、搜索和下载apa相关信息。  
+
+MATERIALS AND METHODS：
+·Collection and processing of RNA-seq data
+从NCBI中加载数据，质控过滤 HISAT2 比对，保留样本。
+·Identification of PAS and PAS cluster
+使用DaPars2基于应用线性回归模型推断APA位点在3'UTR区域内的位置。  
+考虑到DaPars2预测的PAS位置在不同样本之间可能不一致，根据位点位置距离≤24 nt的原则将位点分组。 对于一个基因来说，PAS集群的【中位位置】通常是样本中最具代表性的位置，因此将【中位位置】定义为PAS。
+·Identification of alternative polyadenylation（APA）
+在本研究中，使用了两种流行的算法，DaPars2和QAPA，从标准RNA-seq数据量化APA事件。
+DaPars2仅预测单个近端位点，默认以3'UTR末端为远端位点，因此我们使用percentage of the distal poly(A) site usage index【PDUI，远端poly(A)位点使用指数的百分比】来量化APA事件。
+PDUI：是基于RNA-seq数据定量APA事件的一个新颖、直观的比值。该比值是由              远端poly(a)位点亚型的表达水平
+                                                                  =   ——————————————————————————————————————————
+                                                                          远端和近端poly(a)位点亚型的总表达水平  
+QAPA：利用GENCODE基本poly(a)注释轨迹、PolyASite(42)和/或自定义文件的【PAS注释文件，预编译库】计算基因中每个亚型的相对比例，因此我们使用poly(a) Usage (PAU)来量化APA事件。 
+由于大多数动物缺乏PAS注释文件，我们首先基于从DaPars2结果中提取的PAS，创建PAS注释文件。将已有的PAS注释文件与我们的PAS注释文件合并，进行QAPA计算。
+
+·Identification of APA motifs
+聚腺苷酸化（Polyadenylation）是RNA处理反应的结果。在多聚腺苷酸化过程中，多蛋白复合物在pre- mrna的特定序列上组装，这被称为cleavage and polyadenylation signals (pA signals)。
+pA信号由前mrna内切和随后聚腺苷化的任意一侧的序列组成。所以说，pA信号是有两部分，通常由PAS六聚体以及裂解位点的上下游基序组成。我们就是找PAS六聚体来确定APA。
+
+DATABASE MAKING
+
