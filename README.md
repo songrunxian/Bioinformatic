@@ -5,7 +5,7 @@ this is my notes about bioinformatics' learning
 (2) qapa
 
 # My research objective1：
-Polyadenylation
+Polyadenylation                   
 （1）Wikipedia-Polyadenylation             
       |——Wikipedia-CPSF           
       |             
