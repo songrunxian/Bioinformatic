@@ -1,0 +1,28 @@
+ABSTRACT
+
+· Polyadenylation - 是在RNA转录本(通常是信使RNA (mRNA))上添加poly(A)尾巴。
+· poly(A)尾巴 - 是一段只有腺嘌呤（A）的RNA序列
+· 在【真核生物】中，Polyadenylation是产生成熟mRNA生物学过程的一环，在【许多细菌】中，poly(A)尾巴则负责促进mRNA的降解
+
+当基因转录终止时，Polyadenylation【多聚腺苷酸化】开始。新合成的pre-mRNA的最3'端首先被一组蛋白质切开。这些蛋白质然后在RNA的3'端合成poly(A)尾。
+一些基因中，这些蛋白质在几个【可能的位点】之一添加poly(a)尾巴。因此，Polyadenylation可以从一个基因产生多个转录本【alternative polyadenylation (选择性聚腺苷酸化)】，类似于【alternative splicing（选择性剪接）】
+poly(A)尾对mRNA的核输出、翻译和稳定性具有重要作用。尾巴会随着时间的推移而缩短，当尾巴足够短时，mrna就会被酶降解。
+在一些细胞的细胞质中，会存在一些带有short poly(a)尾巴的mrna，这些mrna作为备用会在稍后通过re-polyadenylation再次激活。
+除促进细菌的mrna降解外，Polyadenylation也会导致真核非编码rna的降解。
+
+Background on RNA
+
+RNA的转录顺序是5'➡3'，3'端被最后转录，也是被polyadenylate并加上 poly(A) tail的地方。mRNA是一种RNA，它有一个编码区，作为蛋白质合成(翻译)的模板。
+mRNA的其余部分，即非转译区域，具有调节mRNA的活性的作用。
+
+Nuclear polyadenylation
+
+·Function：
+在细胞核中，一个poly(A)尾巴被添加到RNA转录的末端。在mRNA上，poly(A)尾保护mRNA分子免受细胞质中的酶降解，并帮助转录终止、mRNA从细胞核输出和翻译。除
+了组蛋白的mRNA外，几乎所有真核mrna的形成过程都出现了Polyadenylation。【注：组蛋白的mRNA具有类似Poly(A)尾巴的结构】
+在small RNA中，poly(A)尾仅以中间形式存在，成熟RNA中看不到，因为在加工过程中其末端被移除。But, for many long noncoding RNAs，Poly(A)是其成熟RNA
+的一部分。
+·Mechanism：
+对于pre-mRNA，CPSF酶让绑定区域下游10–30 nucleotides位置cleavage。
+这个绑定的site often has the polyadenylation signal sequence AAUAAA(或极其类似) on the RNA。
+CstF酶会结合到CPSF位点下游的一个富含GU的区域。
