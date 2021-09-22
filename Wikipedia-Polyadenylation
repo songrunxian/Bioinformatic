@@ -1,4 +1,4 @@
-ABSTRACT
+#ABSTRACT
 
 · Polyadenylation - 是在RNA转录本(通常是信使RNA (mRNA))上添加poly(A)尾巴。
 · poly(A)尾巴 - 是一段只有腺嘌呤（A）的RNA序列
@@ -10,12 +10,12 @@ poly(A)尾对mRNA的核输出、翻译和稳定性具有重要作用。尾巴会
 在一些细胞的细胞质中，会存在一些带有short poly(a)尾巴的mrna，这些mrna作为备用会在稍后通过re-polyadenylation再次激活。
 除促进细菌的mrna降解外，Polyadenylation也会导致真核非编码rna的降解。
 
-Background on RNA
+#Background on RNA
 
 RNA的转录顺序是5'➡3'，3'端被最后转录，也是被polyadenylate并加上 poly(A) tail的地方。mRNA是一种RNA，它有一个编码区，作为蛋白质合成(翻译)的模板。
 mRNA的其余部分，即非转译区域，具有调节mRNA的活性的作用。
 
-Nuclear polyadenylation
+#Nuclear polyadenylation
 
 ·Function：
 在细胞核中，一个poly(A)尾巴被添加到RNA转录的末端。在mRNA上，poly(A)尾保护mRNA分子免受细胞质中的酶降解，并帮助转录终止、mRNA从细胞核输出和翻译。除
@@ -23,4 +23,11 @@ Nuclear polyadenylation
 在small RNA中，poly(A)尾仅以中间形式存在，成熟RNA中看不到，因为在加工过程中其末端被移除。But, for many long noncoding RNAs，Poly(A)是其成熟RNA
 的一部分。
 ·Mechanism：
+协同作用（CPSF、CstF、PAP、PABII、CFI、CFII）*注，CPSF、CstF和RNA polymerase II（RNA聚合酶II）之间是有作用机制的
+·Downstream effects
+Poly（A）尾，可以结合Poly(A)-binding protein，从而促进mRNA从细胞核输出、翻译以及抑制其降解。
+Poly(A)-binding protein将和RNA一起输出到细胞质中。
+没有被运送出细胞核的mRNA将会被降解。
+·Deadenylation
+在真核细胞中，细胞质中大部分mRNA的poly(A)尾逐渐变短，poly(A)尾较短的mRNA翻译较少，降解较快，正常的mRNA则起码需要几个小时。
 
