@@ -6,7 +6,7 @@ this is my notes about bioinformatics' learning
 
 # My research objective1：
 Polyadenylation
-（1）Wikipedia-Polyadenylation
+（1）Wikipedia-Polyadenylation             
       |——Wikipedia-CPSF           
       |             
       |——Wikipedia-Cleavage factors            
