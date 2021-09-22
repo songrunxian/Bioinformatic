@@ -7,11 +7,15 @@ this is my notes about bioinformatics' learning
 # My research objective1：
 Polyadenylation
 （1）Wikipedia-Polyadenylation
-      ——Wikipedia-CPSF
-      ——Wikipedia-Cleavage factors
-      ——Wikipedia-Cleavage stimulation factor
-      ——Wikipedia-Polyadenylate-binding protein 2
-      ——Wikipedia-Polynucleotide adenylyltransferase
-
+      |——Wikipedia-CPSF
+      |
+      |——Wikipedia-Cleavage factors
+      |
+      |——Wikipedia-Cleavage stimulation factor
+      |
+      |——Wikipedia-Polyadenylate-binding protein 2
+      |
+      |——Wikipedia-Polynucleotide adenylyltransferase
+      
 # Paper_reading
 Animal-APAdb: a comprehensive animal alternative polyadenylation database【https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7779049/】
