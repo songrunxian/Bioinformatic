@@ -23,6 +23,4 @@ Nuclear polyadenylation
 在small RNA中，poly(A)尾仅以中间形式存在，成熟RNA中看不到，因为在加工过程中其末端被移除。But, for many long noncoding RNAs，Poly(A)是其成熟RNA
 的一部分。
 ·Mechanism：
-对于pre-mRNA，CPSF酶让绑定区域下游10–30 nucleotides位置cleavage。
-这个绑定的site often has the polyadenylation signal sequence AAUAAA(或极其类似) on the RNA。
-CstF酶会结合到CPSF位点下游的一个富含GU的区域。
+对于pre-mRNA，
