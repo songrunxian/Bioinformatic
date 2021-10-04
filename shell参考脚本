@@ -1,0 +1,57 @@
+#!/bin/bash
+#
+
+string="hello I am runxian U are Diao Diao Diao"
+
+function print_tips
+{
+	echo "**************************************************"
+	echo "(1) please print length of the string"
+	echo "(2) delete all the Diao"
+	echo "(3) change the first Diao to Song"
+	echo "(4) change all the first Diao to Song"
+	echo "**************************************************"
+}
+
+function len_of_string
+{
+	echo "${#string}"
+}
+
+function del_all_Diao
+{
+	echo "${string//Diao/}"
+}
+
+function chan_first_Diao
+{
+	echo "${string/Diao/Song}"
+}
+
+function chan_all_Diao
+{
+	echo "${string//Diao/Song}"
+}
+
+while true 
+do
+	print_tips
+	read -p "please set 1 | 2 | 3 | 4 | q : " i
+	if (( $i == 1 ));then
+		len_of_string
+		exit
+	elif (( $i == 2 ));then
+		del_all_Diao
+		exit
+	elif (( $i == 3 ));then
+		chan_first_Diao
+		exit
+	elif (( $i == 4 ));then
+		chan_all_Diao
+		exit
+	elif (( $i == q ));then
+		exit
+	else
+		echo "error , please set 1 | 2 | 3 | 4 | q !!!!!!!!!!"
+	fi
+done
