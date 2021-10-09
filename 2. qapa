@@ -1,5 +1,9 @@
 qapa的安装详见：https://github.com/morrislab/qapa
 
+QAPA使得使用传统RNA-seq发现和表征调控的APA程序成为可能。
+
+
+
 简单的使用方法：
 
 First 通过build建库：
