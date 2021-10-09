@@ -28,6 +28,8 @@ Third 通过salmon将测序数据比对到新生成的参考基因组上
 *注意是fq格式 不是压缩格式
 *LIBTYPE：单端（SF）双端（IU）
 
+案例：salmon quant -i utr_library/ -l SF -r SRR11940769.fastq -o transcripts_quant
+
 面对生成的模式目录：
 project/
   |-- sample1/quant.sf
