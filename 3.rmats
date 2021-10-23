@@ -1,1 +1,4 @@
 RNASeq-MATS.py --b1 b1.txt --b2 b2.txt --gtf ../Oryza_sativa.IRGSP-1.0.51.gtf  --tmp ./tmp/  --od ./result/ -t paired --nthread 10 --cstat 0.0001 --readLength 150
+
+If rMATS was built with ./build_rmats --conda then it should be run with:
+./run_rmats
